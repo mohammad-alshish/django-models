@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}
+        {% endblock title %}
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="{% url 'snack_list' %}">Home</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Snacks</h1>
+            {% block content %}
+            {% endblock content %}
+        </main>
+    </body>
+</html>
